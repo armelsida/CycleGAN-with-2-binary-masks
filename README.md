@@ -9,4 +9,5 @@ were then used to compute the adversarial and cycle consistency loss.
 ROI_image = Real_image × Binary_mask 
 where ROI_image is the output image, Real_image is the input image and Binary_mask is the
 binary_mask of the input image obtained during segmentation.
+
 ![image](https://github.com/armelsida/CycleGAN-with-2-binary-masks/assets/115725362/5345302a-34a6-4eff-bf0d-53ebc073bd1b)
