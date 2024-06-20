@@ -1,5 +1,6 @@
 # CycleGAN-with-2-binary-masks
-This method is inspired from the original CycleGAN version from https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix and the modified mask cycleGAN from https://github.com/minfawang/mask-cgan/blob/master/README.md
+This method is inspired from the original CycleGAN version from https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix and the modified mask cycleGAN from https://github.com/minfawang/mask-cgan/blob/master/README.md.
+
 The generators A to B and B to A were modified to take, as input, the binary mask for image
 A along with image A and the binary mask for image B along with image B. The binary masks
 were applied to their corresponding images using element-wise multiplication. This process
