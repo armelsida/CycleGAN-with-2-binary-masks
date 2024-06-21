@@ -25,9 +25,9 @@ class named ‘unaligned_mask_dataset.py’ and a new training script named ‘t
 
 4- Copy train_roi.py from this repo and paste it inside the main folder
 
-5- Prepare your dataset. Your dasatset should also include training folders with binary masks for your input images of generator A and generator B. 
+5- Prepare your dataset. Your dataset should also include training folders with binary masks for your input images of generator A and generator B. 
 
-6- run train_roi.py to launch CycleGAN translation only in the region inside your binary masks.
+6- run train_roi.py to launch CycleGAN training only in the region inside your binary masks.
 
 # Results
 The following image illustrates test results on cervigram images.
