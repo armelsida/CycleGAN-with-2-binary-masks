@@ -30,7 +30,6 @@ import wandb
 
 if __name__ == '__main__':
     opt = TrainOptions().parse()   # get training options
-    #dataset = UnalignedMaskDataset(opt)  # create the dataset with binary masks
     dataset = create_dataset(opt)  # create a dataset given opt.dataset_mode and other options
     dataset_size = len(dataset)    # get the number of images in the dataset.
     print('The number of training images = %d' % dataset_size)
