@@ -23,9 +23,7 @@ from options.train_options import TrainOptions
 from data import create_dataset
 from models import create_model
 from util.visualizer import Visualizer
-#import torch
 from data.unaligned_mask_dataset import UnalignedMaskDataset
-#from data.base_dataset import BaseDataset
 
 import wandb
 #wandb.init(project="cycle_gan_project", entity="armelsida")
@@ -53,21 +51,9 @@ if __name__ == '__main__':
             iter_start_time = time.time()  # timer for computation per iteration
             if total_iters % opt.print_freq == 0:
                 t_data = iter_start_time - iter_data_time
-
             total_iters += opt.batch_size
             epoch_iter += opt.batch_size
-            # Unpack data from dataset and apply preprocessing
-            #input_data = {
-                #'A': data['A'],
-                #'B': data['B'],
-                #'A_mask': data['A_mask'],
-                #'B_mask': data['B_mask']
-                
-           # }
-            #print("Input data:", input_data)  # Print the input data dictionary
-            #model.set_input(input_data)
             model.set_input(data)
-
             model.optimize_parameters()   # calculate loss functions, get gradients, update network weights
 
             if total_iters % opt.display_freq == 0:   # display images on visdom and save images to a HTML file
