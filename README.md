@@ -1,7 +1,8 @@
 # CycleGAN-with-2-binary-masks
 This method is inspired from the original CycleGAN version from https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix and the modified mask cycleGAN from https://github.com/minfawang/mask-cgan/blob/master/README.md.
 
-The generators A to B and B to A were modified to take, as input, the binary mask for image
+The CycleGAN architecture was modified to enforce translation only within the Region of
+Interest (ROI) provided by the binary masks of the input images. The generators A to B and B to A were modified to take, as input, the binary mask for image
 A along with image A and the binary mask for image B along with image B. The binary masks
 were applied to their corresponding images using element-wise multiplication. This process
 was implemented in the forward pass of the generators during training. The translated images
@@ -24,6 +25,8 @@ class named ‘unaligned_mask_dataset.py’ and a new training script named ‘t
 
 4- Copy train_roi.py from this repo and paste it inside the main folder
 
-5- Prepare your dataset and run train_roi.py to launch CycleGAN training with 2 binary masks
+5- Prepare your dataset. Your dasatset should also include training folders with binary masks for your input images of generator A and generator B. 
+
+6- run train_roi.py to launch CycleGAN translation only in the region inside your binary masks.
 
 
