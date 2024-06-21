@@ -17,9 +17,13 @@ class named ‘unaligned_mask_dataset.py’ and a new training script named ‘t
 
 # Installation
 1- Clone the original cycleGAN repo available at https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.
+
 2- Copy unaligned_mask_dataset.py from this repo and paste it inside the ./data 
+
 3- Copy cycle_gan_roi_model.py from this repo and paste it inside ./models
+
 4- Copy train_roi.py from this repo and paste it inside the main folder
+
 5- Prepare your dataset and run train_roi.py to launch CycleGAN training with 2 binary masks
 
 
