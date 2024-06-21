@@ -12,6 +12,5 @@ binary_mask of the input image obtained during segmentation.
 
 ![image](https://github.com/armelsida/CycleGAN-with-2-binary-masks/assets/115725362/5345302a-34a6-4eff-bf0d-53ebc073bd1b)
 
-To implement
-this, we have created a new CycleGAN model named ‘cycle_gan_roi_model.py’ , a new dataset
+To implement our method, we have created a new CycleGAN model named ‘cycle_gan_roi_model.py’ , a new dataset
 class named ‘unaligned_mask_dataset.py’ and a new training script named ‘train_roi.py’.
