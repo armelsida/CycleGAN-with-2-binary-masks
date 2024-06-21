@@ -29,4 +29,8 @@ class named ‘unaligned_mask_dataset.py’ and a new training script named ‘t
 
 6- run train_roi.py to launch CycleGAN translation only in the region inside your binary masks.
 
+# Results
+The following image illustrates test results on cervigram images.
+
+![image](https://github.com/armelsida/CycleGAN-with-2-binary-masks/assets/115725362/25ecdcf2-8335-484f-9178-c0a0c02e2a15)
 
