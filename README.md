@@ -14,3 +14,8 @@ binary_mask of the input image obtained during segmentation.
 
 To implement our method, we have created a new CycleGAN model named ‘cycle_gan_roi_model.py’ , a new dataset
 class named ‘unaligned_mask_dataset.py’ and a new training script named ‘train_roi.py’.
+
+# Installation
+Clone this repo:
+git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+cd pytorch-CycleGAN-and-pix2pix
